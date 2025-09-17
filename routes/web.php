@@ -9,12 +9,12 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
-});
 
-Route::get('/dashboard',function(){
-    return view('dashboard');
-});
+    return view('login');
+
+})->name("login");
+
+Route::get('/dashboard',[Controller::class,"dashboard"])->middleware("auth");
 
 Route::post("/register-user",[Controller::class,"register_user"]);
 
