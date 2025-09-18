@@ -132,11 +132,9 @@
     <div class="sidebar">
       <h3>All Users</h3>
       <ul class="user-list">
-        <li>User 1</li>
-        <li>User 2</li>
-        <li>User 3</li>
-        <li>User 4</li>
-        <li>User 5</li>
+        @foreach($users as $user)
+          <li>{{ $user->name}}</li>
+        @endforeach
       </ul>
     </div>
 

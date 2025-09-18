@@ -104,7 +104,9 @@ class Controller
 
     public function dashboard(){
 
-        return view('dashboard');
+        $users = User::all();
+
+        return view('dashboard',compact('users'));
 
     }
 }
