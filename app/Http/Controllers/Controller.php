@@ -109,4 +109,5 @@ class Controller
         return view('dashboard',compact('users'));
 
     }
+    
 }

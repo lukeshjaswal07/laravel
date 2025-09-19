@@ -137,7 +137,7 @@
         @endforeach
       </ul>
     </div>
-
+    
     <!-- Chat Window -->
     <div class="chat-window">
       <div class="chat-header">Chat with User 1</div>
